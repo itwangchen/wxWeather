@@ -130,6 +130,7 @@ Page({
       mask: true
     })
     getPosition(lat, lon, (res) => {
+      console.log(res, 'formatted_addresses')
       if (res.statusCode == 200) {
         let response = res.data.result
         let addr = response.formatted_addresses.recommend || response.rough
@@ -150,6 +151,7 @@ Page({
       return
     }
     getWeatherLive(lat, lon, res => {
+      console.log(res, 'cond_code')
       let data = res.data.HeWeather6[0].now;
       data.iconType = this.data.iconTypeObj[data.cond_code]
       let hour = new Date().getHours()

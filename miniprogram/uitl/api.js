@@ -51,7 +51,6 @@ export const getWeaterInfo = (lat, lon, success = {}, fail = {}) => {
 }
 
 // 根据location信息得到24小逐小时天气情况
-
 export const getEveryHoursWeather = (lat, lon, success = {}, fail = {}) => {
   return wx.request({
     url: everyhoursUrl,

@@ -2,14 +2,14 @@
 	"miniprogramRoot": "miniprogram/",
 	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
 		"autoAudits": false
 	},
-	"appid": "wx525fc0be9edfb253",
+	"appid": "wx0e2bc7dff27bcbf3",
 	"projectname": "wxWeather",
 	"libVersion": "2.2.5",
 	"condition": {
