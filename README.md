@@ -10,7 +10,7 @@
 如果您想使用，请在util目录下创建config.js
 ``` javascript
 export default {
-    MAP_API_KEY: '5EOBZ-JGBKX-SXY4O-TY2WO-E3X3H-IVFXX',
+    MAP_API_KEY: 'XXXXX-XXXXX-XXXXX-XXXXX-XXXXX-XXXXX',
     WEATHER_API_KEY: 'XXXXXXXXXXXXXXX'
 }
 ```
