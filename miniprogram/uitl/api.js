@@ -6,15 +6,15 @@ const locationUrl = 'https://apis.map.qq.com/ws/geocoder/v1/'
 //天气url
 const weatherUrl = 'https://free-api.heweather.net/s6/weather/forecast'
 //24小时内 每小时
-const everyhoursUrl = 'https://api.heweather.net/s6/weather/hourly'
+const everyhoursUrl = 'https://free-api.heweather.net/s6/weather/hourly'
 // 一周内
-const everyWeekUrl = 'https://api.heweather.net/s6/weather/forecast'
+const everyWeekUrl = 'https://free-api.heweather.net/s6/weather/forecast'
 //空气质量
-const airQualityUrl = 'https://api.heweather.net/s6/air/now'
+const airQualityUrl = 'https://free-api.heweather.net/s6/air/now'
 // 实况天气
-const weatherLive = 'https://api.heweather.net/s6/weather/now'
+const weatherLive = 'https://free-api.heweather.net/s6/weather/now'
 // 生活指数
-const lifeStyle = 'https://api.heweather.net/s6/weather/lifestyle'
+const lifeStyle = 'https://free-api.heweather.net/s6/weather/lifestyle'
 // 根据当前位置的坐标反得到当前位置的详细信息
 export const getPosition = (lat, lon, success = {}, fail = {}) => {
   return wx.request({
@@ -87,22 +87,22 @@ export const getWeekWeather = (lat, lon, success = {}, fail = {}) => {
 }
 
 // 空气质量
-export const getAirQuality = (lat, lon, success = {}, fail = {}) => {
-  return wx.request({
-    url: airQualityUrl,
-    header: {
-      'Content-Type': 'application/json'
-    },
-    data: {
-      location: `${lat},${lon}`,
-      lang: 'zh',
-      unit: 'm',
-      key: weatherKey
-    },
-    success,
-    fail
-  })
-}
+// export const getAirQuality = (lat, lon, success = {}, fail = {}) => {
+//   return wx.request({
+//     url: airQualityUrl,
+//     header: {
+//       'Content-Type': 'application/json'
+//     },
+//     data: {
+//       location: `${lat},${lon}`,
+//       lang: 'zh',
+//       unit: 'm',
+//       key: weatherKey
+//     },
+//     success,
+//     fail
+//   })
+// }
 
 // 实况天气
 export const getWeatherLive = (lat, lon, success = {}, fail = {}) => {

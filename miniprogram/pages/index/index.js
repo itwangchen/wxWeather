@@ -5,7 +5,7 @@ import {
   getWeaterInfo,
   getEveryHoursWeather,
   getWeekWeather,
-  getAirQuality,
+  // getAirQuality,
   getWeatherLive,
   getLifeStyle
 } from '../../uitl/api'
@@ -22,7 +22,7 @@ import Rain from '../../class/Rain.js'
 import Snow from '../../class/Snow.js'
 Page({
   data: {
-    bgImgUrl: 'https://7778-wx-lcy-001-7c4596-1258768646.tcb.qcloud.la/cloud.jpg?sign=c2ae35f4801b87899b6699469b943367&t=1552072527',
+    bgImgUrl: 'https://6c78-lxs-429de-1258131976.tcb.qcloud.la/QQ图片20190423232415.jpg?sign=c120fa156848b64eafdd1fa375337fd5&t=1556033122',
     location: {
       x: '116.40',
       y: '39.9',
@@ -130,7 +130,7 @@ Page({
       mask: true
     })
     getPosition(lat, lon, (res) => {
-      console.log(res, 'formatted_addresses')
+      // console.log(res, 'formatted_addresses')
       if (res.statusCode == 200) {
         let response = res.data.result
         let addr = response.formatted_addresses.recommend || response.rough
@@ -151,7 +151,7 @@ Page({
       return
     }
     getWeatherLive(lat, lon, res => {
-      console.log(res, 'cond_code')
+      // console.log(res, 'cond_code')
       let data = res.data.HeWeather6[0].now;
       data.iconType = this.data.iconTypeObj[data.cond_code]
       let hour = new Date().getHours()
@@ -253,23 +253,24 @@ Page({
     if (!lat || !lon) {
       return
     }
-    getAirQuality(lat, lon, res => {
-      let data = res.data.HeWeather6[0].air_now_city
-      let value = data.aqi
-      let keys = Object.keys(airQuailtyLevel)
-      for (let i = 0; i < keys.length; i++) {
-        if (Number(value) <= Number(keys[i])) {
-          data.color = arrForAirColor[i];
-          data.airText = airQuailtyLevel[keys[i]];
-          break;
-        }
-      }
-      this.setData({
-        airQuality: data
-      })
-    }, err => {
-      console.log(err)
-    })
+    // getAirQuality(lat, lon, res => {
+    //   let data = res.data.HeWeather6[0].air_now_city
+    //   console.log(res,'getAirQuality')
+    //   let value = data.aqi
+    //   let keys = Object.keys(airQuailtyLevel)
+    //   for (let i = 0; i < keys.length; i++) {
+    //     if (Number(value) <= Number(keys[i])) {
+    //       data.color = arrForAirColor[i];
+    //       data.airText = airQuailtyLevel[keys[i]];
+    //       break;
+    //     }
+    //   }
+    //   this.setData({
+    //     airQuality: data
+    //   })
+    // }, err => {
+    //   console.log(err)
+    // })
   },
   getLifeIndex: function(lat, lon) {
     if (!lat || !lon) {

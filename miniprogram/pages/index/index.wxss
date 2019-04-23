@@ -217,11 +217,11 @@ page {
 .live-index-item {
   width: 100%;
   height: 118rpx;
-  border-top: 1rpx solid #487eb0;
+  border-top: 1rpx solid #357588;
 }
 
 .live-index-item:nth-last-child(1) {
-  border-bottom: 1rpx solid #487eb0;
+  border-bottom: 1rpx solid #357588;
 }
 
 .live-index-item-left {
