@@ -6,13 +6,13 @@
     "backgroundColor": "#A7CAD3",
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#A7CAD3",
-    "navigationBarTitleText": "蜗牛天气",
+    "navigationBarTitleText": "布丁天气",
     "navigationBarTextStyle": "black",
     "navigationStyle":"custom"
   },
   "permission": {
     "scope.userLocation": {
-      "desc": "蜗牛天气尝试获取您的位置信息"
+      "desc": "布丁天气尝试获取您的位置信息"
     }
   }
 }
