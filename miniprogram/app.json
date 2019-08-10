@@ -8,11 +8,12 @@
     "navigationBarBackgroundColor": "#A7CAD3",
     "navigationBarTitleText": "布丁天气",
     "navigationBarTextStyle": "black",
-    "navigationStyle":"custom"
+    "navigationStyle": "custom"
   },
   "permission": {
     "scope.userLocation": {
       "desc": "布丁天气尝试获取您的位置信息"
     }
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

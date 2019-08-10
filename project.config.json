@@ -12,6 +12,8 @@
 	"appid": "wx0e2bc7dff27bcbf3",
 	"projectname": "wxWeather",
 	"libVersion": "2.2.5",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

@@ -22,7 +22,7 @@ import Rain from '../../class/Rain.js'
 import Snow from '../../class/Snow.js'
 Page({
   data: {
-    bgImgUrl: 'https://6c78-lxs-429de-1258131976.tcb.qcloud.la/QQ图片20190423232415.jpg?sign=c120fa156848b64eafdd1fa375337fd5&t=1556033122',
+    bgImgUrl: '/images/cloud.jpg',
     location: {
       x: '116.40',
       y: '39.9',
